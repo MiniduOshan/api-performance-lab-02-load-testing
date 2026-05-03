@@ -6,5 +6,5 @@ export let options = {
 };
 
 export default function () {
-  http.get("http://localhost:3000/api/data");
+  http.get("http://localhost:3001/api/data");
 }
