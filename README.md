@@ -7,7 +7,7 @@ A hands-on performance comparison lab demonstrating the impact of CPU-bound work
 This lab shows real-world performance differences between:
 
 - **Slow Version**: An API server that performs blocking CPU work (simulated expensive computation)
-- **Optimized Version**: The same API with the CPU work removed, returning immediately
+- ** Optimised Version**: The same API with the CPU work removed, returning immediately
 - **Cluster Version**: A multi-process implementation to leverage all CPU cores
 - **Load Testing**: k6 scripts to generate and measure performance under load
 
@@ -35,12 +35,12 @@ api-performance-lab-02-load-testing/
 ### Setup
 
 ```bash
-# Initialize slow version
+# Initialise slow version
 cd slow-version
 npm init -y
 npm install express
 
-# Initialize optimized version  
+# Initialise optimised version  
 cd ../optimized-version
 npm init -y
 npm install express
@@ -55,14 +55,14 @@ cd ..
 cd slow-version
 node server.js
 
-# Terminal 2: Start optimized server (port 3001)
-cd optimized-version
+# Terminal 2: Start optimised server (port 3001)
+cd optimised-version
 node server.js
 ```
 
 Test endpoints:
 - Slow: `http://localhost:3000/api/data`
-- Optimized: `http://localhost:3001/api/data`
+- Optimised: `http://localhost:3001/api/data`
 
 ### Run Load Tests
 
