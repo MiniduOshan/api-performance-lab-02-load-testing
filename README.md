@@ -1,13 +1,13 @@
 # API Performance: Load Testing
 
-A hands-on performance comparison lab demonstrating the impact of CPU-bound work on API response times and throughput. Compare slow, optimized, and cluster-based server implementations under load.
+A hands-on performance comparison lab demonstrating the impact of CPU-bound work on API response times and throughput. Compare slow, optimised, and cluster-based server implementations under load.
 
 ## Project Overview
 
 This lab shows real-world performance differences between:
 
 - **Slow Version**: An API server that performs blocking CPU work (simulated expensive computation)
-- ** Optimised Version**: The same API with the CPU work removed, returning immediately
+- **Optimised Version**: The same API with the CPU work removed, returning immediately
 - **Cluster Version**: A multi-process implementation to leverage all CPU cores
 - **Load Testing**: k6 scripts to generate and measure performance under load
 
@@ -83,7 +83,7 @@ k6 run k6-test/high-load.js
 - Reduced throughput under load
 - Single-threaded: other requests queue up waiting
 
-### Optimized Server
+### Optimised Server
 - Minimal response times (immediate JSON response)
 - High throughput even under load
 - Responsive to concurrent requests
