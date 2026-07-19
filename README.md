@@ -112,7 +112,3 @@ k6 run k6-test/high-load.js
 - Node.js 14+
 - npm or yarn
 - k6 (for load testing)
-
-## License
-
-MIT
